@@ -15,7 +15,11 @@ MathJax.Hub.Config({
     inlineMath: [['$', '$']],
     displayMath: [['$$', '$$']],
     processEscapes: true
-  }
+  },
+  TeX: {
+    extensions: [ "AMSmath.js", "AMSsymbols.js" ],
+    extensions: [ "AMScd.js" ],
+  },
 });
 </script>
 
@@ -28,7 +32,7 @@ MathJax.Hub.Config({
   }
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML';
   document.body.appendChild(script);
 })();
 </script>
